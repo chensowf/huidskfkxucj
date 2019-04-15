@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:localbroadcastmanager-28.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/4fda5fbc4d6a4b329020d306f4b991fce411bb11/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/4fda5fbc4d6a4b329020d306f4b991fce411bb11/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

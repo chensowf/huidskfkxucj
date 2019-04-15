@@ -1,1 +1,1 @@
-include ':app', ':ssr_sdk'
+include ':app', ':ssr_sdk', ':module_ssr'

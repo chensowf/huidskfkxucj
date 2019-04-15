@@ -12,7 +12,7 @@ import android.view.WindowManager;
 
 import com.github.shadowsocks.aidl.IShadowsocksServiceCallback;
 import com.github.shadowsocks.constant.State;
-import com.github.shadowsocks.database.Profile;
+import com.github.shadowsocks.data.Profile;
 import com.github.shadowsocks.interfaces.SetProfile;
 import com.github.shadowsocks.utils.SS_SDK;
 
@@ -34,7 +34,7 @@ public class Shadowsocks extends ServiceBoundContext {
     //因为vpn是单独的进程，所以这里用到aidl进行进程间的通信
     private IShadowsocksServiceCallback.Stub callback = new IShadowsocksServiceCallback.Stub() {
         @Override
-        public void stateChanged(final int s, String profileName, String msg) throws RemoteException {
+        public void stateChanged(final int s, String profileName, final String msg) throws RemoteException {
             handler.post(new Runnable() {
                 @Override
                 public void run() {

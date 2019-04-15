@@ -1,6 +1,6 @@
 package com.github.shadowsocks.interfaces;
 
-import com.github.shadowsocks.database.Profile;
+import com.github.shadowsocks.data.Profile;
 
 /**
  * Created by victor on 2017/4/18.

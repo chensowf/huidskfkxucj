@@ -10,12 +10,13 @@ import android.os.Handler;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.github.shadowsocks.aidl.IShadowsocksService;
 import com.github.shadowsocks.aidl.IShadowsocksServiceCallback;
 import com.github.shadowsocks.constant.Action;
 import com.github.shadowsocks.constant.State;
-import com.github.shadowsocks.database.Profile;
+import com.github.shadowsocks.data.Profile;
 import com.github.shadowsocks.utils.SS_SDK;
 
 /**
@@ -105,6 +106,7 @@ public abstract class BaseService extends VpnService {
         try {
             connect();
         } catch (Exception e) {
+            Log.e("error",e.toString());
             stopRunner(true, e.toString());
         }
     }

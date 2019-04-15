@@ -55,6 +55,7 @@ public class GuardProcess {
                         }
                     }
                 } catch (Exception e) {
+                    e.printStackTrace();
                     process.destroy();
                 } finally {
                     semaphore.release();

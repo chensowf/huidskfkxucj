@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.net.VpnService;
 import android.os.IBinder;
 import android.os.ParcelFileDescriptor;
-import android.text.TextUtils;
 import android.util.Log;
 
 import com.github.shadowsocks.base.BaseService;
@@ -12,7 +11,7 @@ import com.github.shadowsocks.constant.Action;
 import com.github.shadowsocks.constant.ConfigUtils;
 import com.github.shadowsocks.constant.Route;
 import com.github.shadowsocks.constant.State;
-import com.github.shadowsocks.database.Profile;
+import com.github.shadowsocks.data.Profile;
 import com.github.shadowsocks.utils.Callback;
 import com.github.shadowsocks.utils.Utils;
 

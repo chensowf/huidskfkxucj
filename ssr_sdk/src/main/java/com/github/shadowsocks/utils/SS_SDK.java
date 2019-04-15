@@ -13,9 +13,9 @@ import com.github.shadowsocks.System;
 import com.github.shadowsocks.constant.Executable;
 import com.github.shadowsocks.constant.Key;
 import com.github.shadowsocks.constant.Route;
-import com.github.shadowsocks.database.DBHelper;
-import com.github.shadowsocks.database.Profile;
-import com.github.shadowsocks.database.ProfileManager;
+import com.github.shadowsocks.data.DBHelper;
+import com.github.shadowsocks.data.Profile;
+import com.github.shadowsocks.data.ProfileManager;
 import com.github.shadowsocks.interfaces.SetProfile;
 
 import java.io.FileOutputStream;
@@ -170,17 +170,29 @@ public class SS_SDK implements SetProfile {
             copyAssets(context);
     }
 
-    public void setProfile(String host, int remotePort,
-                           String password, String protocol) {
+    public void setProfile(String host,
+                           int remotePort,
+                           String password,
+                           String protocol) {
         this.host = host;
         this.remotePort = remotePort;
         this.password = password;
         this.protocol = protocol;
     }
 
-    public void setProfile(String host, int remotePort,
-                           String password, String method, String protocol,
-                           String protocol_param, String obfs, String obfs_param) {
+    public void setProfile(Profile profile)
+    {
+
+    }
+
+    public void setProfile(String host,
+                           int remotePort,
+                           String password,
+                           String method,
+                           String protocol,
+                           String protocol_param,
+                           String obfs,
+                           String obfs_param) {
         this.host = host;
         this.remotePort = remotePort;
         this.password = password;
@@ -210,8 +222,8 @@ public class SS_SDK implements SetProfile {
         profile.localPort = 1080;
         profile.udpdns = false;
         profile.ipv6 = false;
-        profile.bypass = false;
-        profile.route = Route.GFWLIST;
+        profile.bypass = true;
+        profile.route = Route.ALL;
         profile.method = method;
         profile.protocol = protocol;//ssr 的协议类型，默认origin
         profile.obfs = obfs;
