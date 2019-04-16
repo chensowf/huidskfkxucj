@@ -8,8 +8,10 @@ import org.xbill.DNS.SimpleResolver;
 import org.xbill.DNS.TextParseException;
 import org.xbill.DNS.Type;
 
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.PrintWriter;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -17,7 +19,10 @@ import java.net.Inet6Address;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.List;
+import java.util.Scanner;
 
 
 /**
@@ -125,5 +130,43 @@ public class Utils {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    public static String readAllLines(File file)
+    {
+        Scanner scanner = null;
+        String scan = null;
+        try {
+            scanner = new Scanner(file);
+            scanner.useDelimiter("\\Z");
+            scan = scanner.next();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }finally {
+            if(scanner != null)
+                scanner.close();
+        }
+        return scan;
+    }
+
+    public static List<String> readAllLine(String name)
+    {
+        List<String> list = new ArrayList<>();
+
+        try {
+            FileReader fileReader = new FileReader(name);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            String temp;
+            while ((temp = bufferedReader.readLine())!=null)
+            {
+                list.add(temp);
+            }
+            bufferedReader.close();;
+            fileReader.close();
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+        return list;
     }
 }

@@ -11,6 +11,7 @@ import android.os.Looper;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 
+import com.github.shadowsocks.R;
 import com.github.shadowsocks.aidl.IShadowsocksService;
 import com.github.shadowsocks.aidl.IShadowsocksServiceCallback;
 import com.github.shadowsocks.data.Profile;
@@ -44,7 +45,7 @@ public abstract class BaseService extends VpnService {
 
     public BaseService()
     {
-        protectPath = getApplicationInfo().dataDir + "/protect_path";
+
     }
 
     protected IShadowsocksService binder = new IShadowsocksService.Stub() {
@@ -208,4 +209,16 @@ public abstract class BaseService extends VpnService {
     }
 
     public abstract void connect();
+
+    public String getBlackList()
+    {
+        String defaultBlack = getString(R.string.black_list);
+        return "exclude = " + defaultBlack + ";";
+    }
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        protectPath = getApplicationInfo().dataDir + "/protect_path";
+    }
 }

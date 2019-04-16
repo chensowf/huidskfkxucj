@@ -21,7 +21,6 @@ public abstract class ServiceBoundContext extends Activity implements IBinder.De
     private String TAG = "Activity";
     class ShadowsocksServiceConnection implements ServiceConnection {
 
-
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {
             Log.e(TAG, "onServiceConnected");

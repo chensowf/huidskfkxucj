@@ -1,4 +1,4 @@
-/* Shadowsocks - A shadowsocks client for Android
+/* com.github.shadowsocks.Shadowsocks - A shadowsocks client for Android
  * Copyright (C) 2012 <max.c.lv@gmail.com>
  *
  * This program is free software: you can redistribute it and/or modify

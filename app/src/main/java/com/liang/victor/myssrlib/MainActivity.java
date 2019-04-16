@@ -9,6 +9,7 @@ import com.github.shadowsocks.constant.Method;
 import com.github.shadowsocks.constant.Obfs;
 import com.github.shadowsocks.constant.Protocol;
 import com.github.shadowsocks.constant.State;
+
 import com.github.shadowsocks.utils.SS_SDK;
 import com.github.shadowsocks.utils.VpnCallback;
 
@@ -35,9 +36,18 @@ public class MainActivity extends Activity implements View.OnClickListener, VpnC
 //        SS_SDK.getInstance().setProfile("192.168.1.1", 443, "ingress",
 //           "auth_sha1");
         SS_SDK.getInstance().switchVpn(this);
+       /* Profile profile = new Profile();
+        profile.setHost("2.56.175.160");
+        profile.setRemotePort(24435);
+        profile.setPassword("asd123");
+        profile.setMethod(Method.AES_256_CFB);
+        profile.setProtocol(Protocol.AUTH_AES128_SHA1);
+        profile.setObfs(Obfs.TLSL1_2_TICKET_AUTH);
+        Intent intent = new Intent(this,ShadowsocksRunnerActivity.class);
+        intent.putExtra(ShadowsocksRunnerActivity.KEY, profile);
+        startActivity(intent);*/
     }
 
-    @Override
     public void callback(int state) {
         switch (state) {
             case State.CONNECTING:

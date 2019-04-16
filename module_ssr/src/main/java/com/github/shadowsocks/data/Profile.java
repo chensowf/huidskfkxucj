@@ -52,6 +52,11 @@ public class Profile implements Parcelable {
 
     private long userOrder;
 
+    public Profile()
+    {
+
+    }
+
     protected Profile(Parcel in) {
         name = in.readString();
         host = in.readString();

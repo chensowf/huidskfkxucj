@@ -10,11 +10,17 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
 
+import com.github.shadowsocks.data.Profile;
+
 public class ShadowsocksRunnerActivity extends ServiceBoundContext {
+
+    public static final String KEY = "ssr_profile";
+
     private final int REQUEST_CONNECT = 1;
     Handler handler = new Handler();
     BroadcastReceiver receiver;
 
+    Profile profile;
 
     @Override
     public void onServiceConnected() {
@@ -40,6 +46,7 @@ public class ShadowsocksRunnerActivity extends ServiceBoundContext {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        profile = getIntent().getParcelableExtra(KEY);
         KeyguardManager km = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
         boolean locked = km.inKeyguardRestrictedInputMode();
         if (locked) {
@@ -56,7 +63,6 @@ public class ShadowsocksRunnerActivity extends ServiceBoundContext {
         } else {
             attachService(null);
         }
-        finish();
     }
 
     @Override
@@ -75,7 +81,7 @@ public class ShadowsocksRunnerActivity extends ServiceBoundContext {
             case RESULT_OK:
                 if (bgService != null) {
                     try {
-                        bgService.use(null);
+                        bgService.use(profile);
                     } catch (RemoteException e) {
                         e.printStackTrace();
                     }

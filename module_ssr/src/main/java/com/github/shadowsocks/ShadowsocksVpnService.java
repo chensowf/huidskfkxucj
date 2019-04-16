@@ -5,17 +5,24 @@ import android.net.VpnService;
 import android.os.Build;
 import android.os.IBinder;
 import android.os.ParcelFileDescriptor;
+import android.util.Log;
 
 import com.github.shadowsocks.base.BaseService;
 import com.github.shadowsocks.data.Profile;
 import com.github.shadowsocks.utils.Action;
+import com.github.shadowsocks.utils.Callback;
+import com.github.shadowsocks.utils.ConfigUtils;
 import com.github.shadowsocks.utils.Route;
 import com.github.shadowsocks.utils.State;
+import com.github.shadowsocks.utils.TcpFastOpen;
 import com.github.shadowsocks.utils.Utils;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
+
 
 public class ShadowsocksVpnService extends BaseService {
 
@@ -88,6 +95,13 @@ public class ShadowsocksVpnService extends BaseService {
             }
             profile.setHost(addr);
         }
+        handleConnection();
+        changeState(State.CONNECTED,null);
+
+        if(!profile.getRoute().equals(Route.ALL))
+        {
+
+        }
     }
 
     @Override
@@ -136,6 +150,7 @@ public class ShadowsocksVpnService extends BaseService {
             Intent intent = new Intent(this, ShadowsocksRunnerActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             stopRunner(true,null);
+            startActivity(intent);
             return;
         }
 
@@ -206,13 +221,340 @@ public class ShadowsocksVpnService extends BaseService {
         }
         else
         {
+            String[] privateList = getResources().getStringArray(R.array.bypass_private_route);
 
+            for(String route : privateList)
+            {
+                String[] addr = route.split("/");
+                builder.addRoute(addr[0],Integer.parseInt(addr[1]));
+            }
         }
+
+        if(profile.getRoute() == Route.CHINALIST)
+            builder.addRoute(china_dns_address, 32);
+        else
+            builder.addRoute(dns_address, 32);
+        conn = builder.establish();
+        if(conn == null) throw new NullPointerException("conn is null");
+
+        final int fd = conn.getFd();
+
+        List<String> cmd = new ArrayList<>();
+        cmd.add(getApplicationInfo().dataDir+"/tun2socks");
+        cmd.add("--netif-ipaddr");
+        cmd.add(String.format(PRIVATE_VLAN,"2"));
+        cmd.add("--netif-netmask");
+        cmd.add( "255.255.255.0");
+        cmd.add("--socks-server-addr");
+        cmd.add("127.0.0.1:" + profile.getLocalPort());
+        cmd.add("--tunfd");
+        cmd.add(""+fd);
+        cmd.add("--tunmtu");
+        cmd.add(""+VPN_MTU);
+        cmd.add("--sock-path");
+        cmd.add(getApplicationInfo().dataDir+"/sock_path");
+        cmd.add("--loglevel");
+        cmd.add("3");
+
+        if(profile.isIpv6()) {
+            cmd.add("--netif-ip6addr");
+            cmd.add(String.format(PRIVATE_VLAN6,"2"));
+        }
+
+        if(profile.isUdpdns())
+            cmd.add("--enable-udprelay");
+        else {
+            cmd.add("--dnsgw");
+            cmd.add(String.format("%s:%d", String.format(PRIVATE_VLAN,"1"), profile.getLocalPort()+53));
+        }
+
+        tun2socksProcess = new GuardProcess(cmd).start(new Callback() {
+            @Override
+            public void callback() {
+                sendFd(fd);
+            }
+        });
+        return fd;
     }
 
     private void handleConnection()
     {
-        int fd =
+        int fd = startVpn();
+        if(!sendFd(fd)) new Exception("snedFd failed");
+
+        startShadowsocksDaemon();
+
+        if(profile.isUdpdns())
+        {
+            startShadowsocksUDPDaemon();
+        }
+
+        if(!profile.isUdpdns())
+        {
+            startDnsDaemon();
+            startDnsTunnel();
+        }
+    }
+
+    private void startDnsDaemon()
+    {
+        String reject = profile.isIpv6()?"224.0.0.0/3":"224.0.0.0/3, ::/0";
+        String protect = "protect = \"" + protectPath +"\";";
+
+        String china_dns_settings = "";
+        boolean remote_dns = false;
+
+        if(profile.getRoute().equals(Route.ACL))
+        {
+            List<String> lines = Utils.readAllLine(getApplicationInfo().dataDir + '/' + profile.getRoute() + ".acl");
+            for(String line : lines)
+            {
+                if(line.equals("[remote_dns]"))
+                {
+                    remote_dns = true;
+                }
+            }
+        }
+
+        String black_list;
+        switch (profile.getRoute())
+        {
+            case Route.BYPASS_CHN:
+            case Route.BYPASS_LAN_CHN:
+            case Route.GFWLIST:
+                black_list = getBlackList();
+                break;
+            case Route.ACL:
+                if(remote_dns)
+                    black_list = "";
+                else
+                    black_list = getBlackList();
+                break;
+                default:
+                    black_list = "";
+        }
+        String[] china_dnss = profile.getChina_dns().split(",");
+        for(String china_dns : china_dnss)
+        {
+            china_dns_settings += String.format(ConfigUtils.REMOTE_SERVER,
+                    china_dns.split(":")[0],
+                    Integer.parseInt(china_dns.split(":")[1]),
+                    black_list, reject);
+        }
+
+        String conf;
+        switch (profile.getRoute())
+        {
+            case Route.BYPASS_CHN:
+            case Route.BYPASS_LAN_CHN:
+            case Route.GFWLIST:
+                conf = String.format(ConfigUtils.PDNSD_DIRECT,
+                        protect,
+                        getApplicationInfo().dataDir,
+                        "0.0.0.0",
+                        profile.getLocalPort() + 53,
+                        china_dns_settings,
+                        profile.getLocalPort() + 63,
+                        reject);
+                break;
+            case Route.CHINALIST:
+                conf = String.format(ConfigUtils.PDNSD_DIRECT,
+                        protect,
+                        getApplicationInfo().dataDir,
+                        "0.0.0.0",
+                        profile.getLocalPort() + 53,
+                        china_dns_settings,
+                        profile.getLocalPort() + 63,
+                        reject);
+                break;
+            case Route.ACL:
+                if(!remote_dns)
+                {
+                    conf = String.format(ConfigUtils.PDNSD_DIRECT,
+                            protect,
+                            getApplicationInfo().dataDir,
+                            "0.0.0.0",
+                            profile.getLocalPort() + 53,
+                            china_dns_settings,
+                            profile.getLocalPort() + 63,
+                            reject);
+                }
+                else
+                {
+                    conf = String.format(ConfigUtils.PDNSD_LOCAL,
+                            protect,
+                            getApplicationInfo().dataDir,
+                            "0.0.0.0",
+                            profile.getLocalPort() + 53,
+                            profile.getLocalPort() + 63,
+                            reject);
+                }
+                break;
+                default:
+                    conf = String.format(ConfigUtils.PDNSD_LOCAL,
+                            protect,
+                            getApplicationInfo().dataDir,
+                            "0.0.0.0",
+                            profile.getLocalPort() + 53,
+                            profile.getLocalPort() + 63,
+                            reject);
+        }
+
+        Utils.printToFile(conf,new File(getApplicationInfo().dataDir + "/pdnsd-vpn.conf"));
+
+        List<String> cmd = new ArrayList<>();
+        cmd.add(getApplicationInfo().dataDir + "/pdnsd");
+        cmd.add("-c");
+        cmd.add(getApplicationInfo().dataDir + "/pdnsd-vpn.conf");
+
+        pdnsdProcess = new GuardProcess(cmd).start(null);
+    }
+
+    private void startDnsTunnel()
+    {
+        String conf = String.format(ConfigUtils.SHADOWSOCKS,
+                profile.getHost(),
+                profile.getRemotePort(),
+                profile.getLocalPort() + 63,
+                ConfigUtils.EscapedJson(profile.getPassword()),
+                profile.getMethod(),
+                600,
+                profile.getProtocol(),
+                profile.getObfs(),
+                ConfigUtils.EscapedJson(profile.getObfs_param()),
+                ConfigUtils.EscapedJson(profile.getProtocol_param()));
+
+        Utils.printToFile(conf, new File(getApplicationInfo().dataDir + "/ss-tunnel-vpn.conf"));
+
+        List<String> cmd = new ArrayList<>();
+        cmd.add(getApplicationInfo().dataDir + "/ss-local");
+        cmd.add("-V");
+        cmd.add("-u");
+        cmd.add("-t");
+        cmd.add("60");
+        cmd.add("--host");
+        cmd.add(host_arg);
+        cmd.add("-b");
+        cmd.add("127.0.0.1");
+        cmd.add("-P");
+        cmd.add(getApplicationInfo().dataDir);
+        cmd.add("-c");
+        cmd.add(getApplicationInfo().dataDir + "/ss-tunnel-vpn.conf");
+        cmd.add("-L");
+        if(profile.getRoute().equals(Route.CHINALIST))
+        {
+            cmd.add(china_dns_address + ":" + china_dns_port);
+        }
+        else
+        {
+            cmd.add(dns_address + ":" + dns_port);
+        }
+
+        if(proxychains_enable)
+        {
+            cmd.add("LD_PRELOAD=" + getApplicationInfo().dataDir + "/lib/libproxychains4.so");
+            cmd.add("PROXYCHAINS_CONF_FILE=" + getApplicationInfo().dataDir + "/proxychains.conf");
+            cmd.add("PROXYCHAINS_PROTECT_FD_PREFIX=" + getApplicationInfo().dataDir);
+            cmd.add("env");
+        }
+
+        sstunnelProcess = new GuardProcess(cmd).start(null);
+    }
+
+    private void startShadowsocksDaemon()
+    {
+        String conf = String.format(ConfigUtils.SHADOWSOCKS,
+                profile.getHost(),
+                profile.getRemotePort(),
+                profile.getLocalPort(),
+                ConfigUtils.EscapedJson(profile.getPassword()),
+                profile.getMethod(),
+                600,
+                profile.getProtocol(),
+                profile.getObfs(),
+                ConfigUtils.EscapedJson(profile.getObfs_param()),
+                ConfigUtils.EscapedJson(profile.getProtocol_param())
+                );
+        Utils.printToFile(conf, new File(getApplicationInfo().dataDir + "/ss-local-vpn.conf"));
+
+        List<String> cmd = new ArrayList<>();
+        cmd.add(getApplicationInfo().dataDir + "/ss-local");
+        cmd.add("-V");
+        cmd.add("-x");
+        cmd.add("-b");
+        cmd.add("127.0.0.1");
+        cmd.add("-t");
+        cmd.add("600");
+        cmd.add("--host");
+        cmd.add(host_arg);
+        cmd.add("-P");
+        cmd.add(getApplicationInfo().dataDir);
+        cmd.add("-c");
+        cmd.add(getApplicationInfo().dataDir + "/ss-local-vpn.conf");
+
+        if(profile.isUdpdns())
+            cmd.add("-u");
+        if(profile.getRoute() != Route.ALL)
+        {
+            cmd.add("--acl");
+            cmd.add(getApplicationInfo().dataDir + '/' + profile.getRoute() + ".acl");
+        }
+
+        if(TcpFastOpen.sendEnable())
+            cmd.add("--fast-open");
+
+        if(proxychains_enable)
+        {
+            cmd.add("LD_PRELOAD=" + getApplicationInfo().dataDir + "/lib/libproxychains4.so");
+            cmd.add("PROXYCHAINS_CONF_FILE=" + getApplicationInfo().dataDir + "/proxychains.conf");
+            cmd.add("PROXYCHAINS_PROTECT_FD_PREFIX=" + getApplicationInfo().dataDir);
+            cmd.add("env");
+        }
+
+        sslocalProcess = new GuardProcess(cmd).start(null);
+    }
+
+    private void startShadowsocksUDPDaemon()
+    {
+        String conf = String.format(ConfigUtils.SHADOWSOCKS,
+                profile.getHost(),
+                profile.getRemotePort(),
+                profile.getLocalPort(),
+                ConfigUtils.EscapedJson(profile.getPassword()),
+                profile.getMethod(),
+                600,
+                profile.getProtocol(),
+                profile.getObfs(),
+                ConfigUtils.EscapedJson(profile.getObfs_param()),
+                ConfigUtils.EscapedJson(profile.getProtocol_param())
+                );
+
+        Utils.printToFile(conf, new File(getApplicationInfo().dataDir + "/ss-local-udp-vpn.conf"));
+
+        List<String> cmd = new ArrayList<>();
+        cmd.add(getApplicationInfo().dataDir + "/ss-local");
+        cmd.add("-V");
+        cmd.add("-U");
+        cmd.add("-b");
+        cmd.add("127.0.0.1");
+        cmd.add("-t");
+        cmd.add("600");
+        cmd.add("--host");
+        cmd.add(host_arg);
+        cmd.add("-P");
+        cmd.add(getApplicationInfo().dataDir);
+        cmd.add("-c");
+        cmd.add(getApplicationInfo().dataDir + "/ss-local-udp-vpn.conf");
+
+        if(proxychains_enable)
+        {
+            cmd.add("LD_PRELOAD=" + getApplicationInfo().dataDir + "/lib/libproxychains4.so");
+            cmd.add("PROXYCHAINS_CONF_FILE=" + getApplicationInfo().dataDir + "/proxychains.conf");
+            cmd.add("PROXYCHAINS_PROTECT_FD_PREFIX=" + getApplicationInfo().dataDir);
+            cmd.add("env");
+        }
+
+        sstunnelProcess = new GuardProcess(cmd).start(null);
     }
 
     private boolean sendFd(int fd)
