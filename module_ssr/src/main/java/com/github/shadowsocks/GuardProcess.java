@@ -1,6 +1,6 @@
 package com.github.shadowsocks;
 
-import com.github.shadowsocks.utils.Callback;
+import com.github.shadowsocks.interfaces.Callback;
 
 import java.lang.System;
 import java.util.List;

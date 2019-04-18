@@ -1,4 +1,4 @@
-package com.github.shadowsocks.utils;
+package com.github.shadowsocks.constant;
 
 /**
  * Created by victor on 2017/4/6.

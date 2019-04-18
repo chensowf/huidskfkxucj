@@ -1,4 +1,4 @@
-package com.github.shadowsocks.utils;
+package com.github.shadowsocks.constant;
 
 public class Action {
     public static final String SERVICE = "in.zhaoj.shadowsocksr.SERVICE";

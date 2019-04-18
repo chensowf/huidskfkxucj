@@ -3,6 +3,7 @@ package com.github.shadowsocks;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.github.shadowsocks.utils.IOUtils;
 
@@ -24,9 +25,9 @@ public class SSRSDK {
         EXECUTABLES.add("redsocks");
         EXECUTABLES.add("pdnsd");
         EXECUTABLES.add("ss-local");
-        EXECUTABLES.add("ss-tunnel");
+    //    EXECUTABLES.add("ss-tunnel");
         EXECUTABLES.add("tun2socks");
-        EXECUTABLES.add("kcptun");
+  //      EXECUTABLES.add("kcptun");
 
         copyAssets(context);
     }
@@ -47,15 +48,17 @@ public class SSRSDK {
     private static void copyAssets(Context context)
     {
         crashRecovery(context);
+        Log.e("error",System.getABI());
         copyAssets(System.getABI(),context);
         copyAssets("acl",context);
         ArrayList<String> cmd = new ArrayList<>();
         for (int i = 0; i < EXECUTABLES.size(); i++) {
-            String temp = "chmod 755 " + context.getApplicationInfo().dataDir + "/" + EXECUTABLES.get(i);
+            String temp = "chmod 777 " + context.getApplicationInfo().dataDir + "/" + EXECUTABLES.get(i);
             cmd.add(temp);
         }
         Shell.SH.run(cmd);
         cmd.clear();
+        EXECUTABLES.clear();
     }
 
 

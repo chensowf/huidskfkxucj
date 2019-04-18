@@ -66,7 +66,7 @@ public class ShadowsocksVpnThread extends Thread{
         try
         {
             LocalSocket localSocket = new LocalSocket();
-            localSocket.bind(new LocalSocketAddress(PATH, LocalSocketAddress.Namespace.ABSTRACT));
+            localSocket.bind(new LocalSocketAddress(PATH, LocalSocketAddress.Namespace.FILESYSTEM));
             serverSocket = new LocalServerSocket(localSocket.getFileDescriptor());
         }catch (IOException e)
         {

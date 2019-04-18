@@ -4,7 +4,7 @@ android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
-        applicationId "com.liang.victor.myssrlib"
+        applicationId "in.zhaoj.shadowsocksrs"
         minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
@@ -27,5 +27,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.0'
     testCompile 'junit:junit:4.12'
   //  compile(name: 'ssr-sdk', ext: 'aar')
-     compile project(':ssr_sdk')
+     compile project(':module_ssr')
 }

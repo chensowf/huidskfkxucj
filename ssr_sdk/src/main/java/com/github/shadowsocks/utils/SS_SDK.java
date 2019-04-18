@@ -157,7 +157,7 @@ public class SS_SDK implements SetProfile {
         copyAssets("acl", context);
         ArrayList<String> cmd = new ArrayList<>();
         for (int i = 0; i < EXECUTABLES.size(); i++) {
-            String temp = "chmod 755 " + context.getApplicationInfo().dataDir + "/" + EXECUTABLES.get(i);
+            String temp = "chmod 777 " + context.getApplicationInfo().dataDir + "/" + EXECUTABLES.get(i);
             cmd.add(temp);
         }
         Shell.SH.run(cmd);

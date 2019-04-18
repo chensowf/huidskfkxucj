@@ -1,4 +1,4 @@
-package com.github.shadowsocks.utils;
+package com.github.shadowsocks.constant;
 
 public class State {
     public final static int CONNECTING = 0,

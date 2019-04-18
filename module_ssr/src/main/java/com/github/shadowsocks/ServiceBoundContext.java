@@ -11,7 +11,7 @@ import android.util.Log;
 
 import com.github.shadowsocks.aidl.IShadowsocksService;
 import com.github.shadowsocks.aidl.IShadowsocksServiceCallback;
-import com.github.shadowsocks.utils.Action;
+import com.github.shadowsocks.constant.Action;
 
 /**
  * Created by victor on 2017/4/11.

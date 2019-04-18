@@ -7,16 +7,16 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.VpnService;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 
 import com.github.shadowsocks.R;
+import com.github.shadowsocks.SSRSDK;
 import com.github.shadowsocks.aidl.IShadowsocksService;
 import com.github.shadowsocks.aidl.IShadowsocksServiceCallback;
 import com.github.shadowsocks.data.Profile;
-import com.github.shadowsocks.utils.Action;
-import com.github.shadowsocks.utils.State;
+import com.github.shadowsocks.constant.Action;
+import com.github.shadowsocks.constant.State;
 import com.github.shadowsocks.utils.TrafficMonitor;
 import com.github.shadowsocks.utils.TrafficMonitorThread;
 
@@ -220,5 +220,6 @@ public abstract class BaseService extends VpnService {
     public void onCreate() {
         super.onCreate();
         protectPath = getApplicationInfo().dataDir + "/protect_path";
+        SSRSDK.init(this);
     }
 }

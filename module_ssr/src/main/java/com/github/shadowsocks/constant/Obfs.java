@@ -1,4 +1,4 @@
-package com.github.shadowsocks.utils;
+package com.github.shadowsocks.constant;
 
 public class Obfs {
 

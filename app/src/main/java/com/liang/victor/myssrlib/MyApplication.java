@@ -2,7 +2,7 @@ package com.liang.victor.myssrlib;
 
 import android.app.Application;
 
-import com.github.shadowsocks.utils.SS_SDK;
+import com.github.shadowsocks.SSRSDK;
 
 
 /**
@@ -12,7 +12,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        SS_SDK.init(this);
-   //     SSRSDK.init(this);
+   //     SS_SDK.init(this);
+  //      SSRSDK.init(this);
     }
 }
