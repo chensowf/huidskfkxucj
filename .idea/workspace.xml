@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
@@ -10,6 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af8dedae-75c8-4021-8cf5-889469415496" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/interfaces/VpnCallback.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -23,46 +29,78 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_j256_ormlite_ormlite_android_5_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_j256_ormlite_ormlite_core_5_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/assets/armeabi-v7a/pdnsd" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/assets/armeabi-v7a/pdnsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/assets/armeabi-v7a/redsocks" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/assets/armeabi-v7a/redsocks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/assets/armeabi-v7a/ss-local" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/assets/armeabi-v7a/ss-local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/assets/armeabi-v7a/tun2socks" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/assets/armeabi-v7a/tun2socks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/assets/x86/pdnsd" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/assets/x86/pdnsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/assets/x86/redsocks" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/assets/x86/redsocks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/assets/x86/ss-local" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/assets/x86/ss-local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/assets/x86/tun2socks" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/assets/x86/tun2socks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/GuardProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/GuardProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_ssr/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_ssr/module_ssr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/module_ssr.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ServiceBoundContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ServiceBoundContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/constant/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/Callback.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/interfaces/Callback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/ConfigUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/constant/ConfigUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/Method.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/constant/Method.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/Obfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/constant/Obfs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/Protocol.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/constant/Protocol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/Route.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/constant/Route.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/constant/State.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/jniLibs/armeabi-v7a/libproxychains4.so" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/jniLibs/armeabi-v7a/libproxychains4.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/jniLibs/armeabi-v7a/libsystem.so" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/jniLibs/armeabi-v7a/libsystem.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/jniLibs/x86/libproxychains4.so" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/jniLibs/x86/libproxychains4.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/jniLibs/x86/libsystem.so" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/jniLibs/x86/libsystem.so" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/pdnsd" beforeDir="false" afterPath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/pdnsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/redsocks" beforeDir="false" afterPath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/redsocks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/ss-local" beforeDir="false" afterPath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/ss-local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/tun2socks" beforeDir="false" afterPath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/tun2socks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/pdnsd" beforeDir="false" afterPath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/pdnsd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/redsocks" beforeDir="false" afterPath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/redsocks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/ss-local" beforeDir="false" afterPath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/ss-local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/tun2socks" beforeDir="false" afterPath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/tun2socks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/SS_SDK.java" beforeDir="false" afterPath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/SS_SDK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/libs/classes.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/libs/dnsjava-2.1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/libs/libsuperuser-1.0.0.201704021214.aar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/libs/ormlite-android-5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/libs/ormlite-core-5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/aidl/com/github/shadowsocks/aidl/IShadowsocksService.aidl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/aidl/com/github/shadowsocks/aidl/IShadowsocksServiceCallback.aidl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/acl/bypass-china.acl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/acl/bypass-lan-china.acl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/acl/bypass-lan.acl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/acl/china-list.acl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/acl/gfwlist.acl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/pdnsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/redsocks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/ss-local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/ss-tunnel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/tun2socks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/pdnsd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/redsocks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/ss-local" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/tun2socks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/GuardProcess.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ServiceBoundContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/Shadowsocks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/System.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/base/BaseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Action.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/ConfigUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Executable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Key.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Method.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Obfs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Protocol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Route.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/State.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/data/DBHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/data/Profile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/data/ProfileManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/interfaces/SetProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/Callback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/IOUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/SS_SDK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/Utils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/VpnCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/jniLibs/armeabi-v7a/libsystem.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/jniLibs/x86/libsystem.so" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/layout/activity_shadowsocks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/values/arrays.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/values/configs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ssr_sdk/ssr_sdk.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -85,20 +123,111 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java">
+      <file leaf-file-name="BaseService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+            <state relative-caret-position="239">
+              <caret line="183" column="37" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="37" />
+              <folding>
+                <element signature="e#1298#1456#0" expanded="true" />
+                <element signature="e#1455#1456#0" expanded="true" />
+                <element signature="e#5014#5847#0" expanded="true" />
+                <element signature="e#5846#5847#0" expanded="true" />
+                <element signature="e#6201#6231#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Route.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/constant/Route.java">
+      <file leaf-file-name="ShadowsocksVpnThread.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="11" column="38" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="38" />
+            <state relative-caret-position="390">
+              <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_ssr/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShadowsocksRunnerActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2000">
+              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceBoundContext.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ServiceBoundContext.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="94" column="29" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SSRSDK.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2461">
+              <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
+              <folding>
+                <element signature="e#3519#3520#0" expanded="true" />
+                <element signature="e#3565#3566#0" expanded="true" />
+                <element signature="e#3625#3626#0" expanded="true" />
+                <element signature="e#3659#3660#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="29" selection-start-column="29" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VpnCallback.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/interfaces/VpnCallback.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml">
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -111,17 +240,12 @@
         <option value="Enum" />
         <option value="valueResourceFile" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ShadowsocksServiceConnection</find>
-      <find>connection</find>
-      <find>receiver</find>
-      <find>startBackgroundService</find>
-      <find>REQUEST_CONNECT</find>
-      <find>callback</find>
       <find>onCreate</find>
       <find>process</find>
       <find>profile</find>
@@ -146,6 +270,12 @@
       <find>PATH</find>
       <find>getInt</find>
       <find>FILESYSTEM</find>
+      <find>vpnThread</find>
+      <find>closeReceiver</find>
+      <find>receiver</find>
+      <find>callback</find>
+      <find>state</find>
+      <find>callbacksCount</find>
     </findStrings>
     <dirStrings>
       <dir>F:\androidPro\shadowsockr-java\ssr_sdk\src\main</dir>
@@ -189,10 +319,6 @@
               <ExternalProjectPojo>
                 <option name="name" value=":module_ssr" />
                 <option name="path" value="$PROJECT_DIR$/module_ssr" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
-                <option name="name" value=":ssr_sdk" />
-                <option name="path" value="$PROJECT_DIR$/ssr_sdk" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -440,11 +566,6 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="validateSigningDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Extracts Android annotations for the release variant into the archive file" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractReleaseAnnotations" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -766,11 +887,6 @@
                 <option name="description" value="Prepare com.android.support.test:rules:0.5" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportTestRules05Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Extracts Android annotations for the debug variant into the archive file" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
-                <option name="name" value="extractDebugAnnotations" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -3855,28 +3971,30 @@
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/Shadowsocks.java" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/SS_SDK.java" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ServiceBoundContext.java" />
-        <option value="$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/Obfs.java" />
         <option value="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Method.java" />
-        <option value="$PROJECT_DIR$/module_ssr/build.gradle" />
-        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MyApplication.java" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/GuardProcess.java" />
-        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java" />
         <option value="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/SS_SDK.java" />
-        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/interfaces/VpnCallback.java" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/module_ssr/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-436" />
-    <option name="y" value="138" />
+    <option name="x" value="-370" />
+    <option name="y" value="152" />
     <option name="width" value="1940" />
-    <option name="height" value="1049" />
+    <option name="height" value="1065" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -3965,37 +4083,12 @@
             <path>
               <item name="shadowsockr-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="shadowsockr-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ssr_sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="shadowsockr-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowsockr-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ssr_sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shadowsockr-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowsockr-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ssr_sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shadowsockr-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowsockr-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ssr_sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="shadowsockr-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="shadowsockr-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="ssr_sdk" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_ssr" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="shadowsocks" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -4168,12 +4261,18 @@
       <option name="project" value="LOCAL" />
       <updated>1555418642248</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="commit:调通ssr的库">
+      <created>1555586584118</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555586584118</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="12" sideWeight="0.3640725" weight="0.6034858" />
       <window_info anchor="right" id="sbt" order="10" />
@@ -4186,7 +4285,7 @@
       <window_info anchor="bottom" id="SBT Execute" side_tool="true" />
       <window_info id="Structure" order="1" sideWeight="0.5097276" side_tool="true" weight="0.18923241" />
       <window_info anchor="right" id="Device File Explorer" order="9" sideWeight="0.50167227" side_tool="true" visible="true" weight="0.17910448" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.1641791" visible="true" weight="0.54684097" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.1641791" visible="true" weight="0.2254902" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3278867" />
       <window_info anchor="bottom" id="SBT Console" order="14" weight="0.32897604" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
@@ -4194,9 +4293,9 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5101279" weight="0.5163399" />
       <window_info anchor="bottom" content_ui="combo" id="Version Control" order="9" sideWeight="0.52132195" weight="0.44553378" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.8358209" side_tool="true" visible="true" weight="0.54684097" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8358209" side_tool="true" visible="true" weight="0.2254902" />
       <window_info id="Captures" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49027237" visible="true" weight="0.24147122" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49027237" visible="true" weight="0.24147122" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="14" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.2788671" />
       <window_info anchor="right" id="Gradle" order="6" sideWeight="0.49832776" weight="0.32889125" />
@@ -4218,69 +4317,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit:152d3f15d" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit:152d3f15d" />
+    <MESSAGE value="commit:调通ssr的库" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit:调通ssr的库" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java</url>
-          <line>63</line>
+          <url>file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java</url>
+          <line>185</line>
           <properties />
-          <option name="timeStamp" value="26" />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java</url>
+          <line>181</line>
+          <properties />
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="27" />
+      <option name="time" value="30" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/assets/acl/gfwlist.acl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/assets/acl/gfwlist.acl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-25/java/lang/Process.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="127" column="24" selection-start-line="127" selection-start-column="24" selection-end-line="127" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/System.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="41" column="10" lean-forward="true" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1180">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ServiceBoundContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2100">
-          <caret line="95" column="16" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Key.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Method.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
@@ -4337,14 +4396,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ssr_sdk/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="825">
@@ -4352,27 +4403,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1925">
-          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/SS_SDK.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="60" column="28" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -4387,13 +4421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -4450,16 +4477,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="85" column="40" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -4496,17 +4513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="88" column="79" selection-start-line="88" selection-start-column="79" selection-end-line="88" selection-end-column="79" />
-          <folding>
-            <element signature="e#2246#4034#0" expanded="true" />
-            <element signature="e#4033#4034#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4587,10 +4593,130 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/TrafficMonitorThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="73" column="29" lean-forward="true" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
+          <folding>
+            <element signature="e#1918#3190#0" expanded="true" />
+            <element signature="e#3189#3190#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="123" column="29" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="37" column="60" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/build/generated/source/aidl/debug/com/github/shadowsocks/aidl/IShadowsocksServiceCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml">
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/interfaces/VpnCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="47" column="38" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        <state relative-caret-position="550">
+          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2461">
+          <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
+          <folding>
+            <element signature="e#3519#3520#0" expanded="true" />
+            <element signature="e#3565#3566#0" expanded="true" />
+            <element signature="e#3625#3626#0" expanded="true" />
+            <element signature="e#3659#3660#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="183" column="37" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="37" />
+          <folding>
+            <element signature="e#1298#1456#0" expanded="true" />
+            <element signature="e#1455#1456#0" expanded="true" />
+            <element signature="e#5014#5847#0" expanded="true" />
+            <element signature="e#5846#5847#0" expanded="true" />
+            <element signature="e#6201#6231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ServiceBoundContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="94" column="29" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2000">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

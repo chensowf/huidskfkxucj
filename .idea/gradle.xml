@@ -10,7 +10,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/module_ssr" />
-            <option value="$PROJECT_DIR$/ssr_sdk" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

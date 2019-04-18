@@ -1,10 +1,14 @@
 package com.github.shadowsocks;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.AssetManager;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.github.shadowsocks.constant.Action;
+import com.github.shadowsocks.data.Profile;
+import com.github.shadowsocks.interfaces.VpnCallback;
 import com.github.shadowsocks.utils.IOUtils;
 
 import java.io.FileOutputStream;
@@ -19,15 +23,16 @@ import eu.chainfire.libsuperuser.Shell;
 public class SSRSDK {
 
     private static ArrayList<String> EXECUTABLES = new ArrayList<>();
+    private static VpnCallback vpnCallback;
 
     public static void init(Context context)
     {
         EXECUTABLES.add("redsocks");
         EXECUTABLES.add("pdnsd");
         EXECUTABLES.add("ss-local");
-    //    EXECUTABLES.add("ss-tunnel");
+      //  EXECUTABLES.add("ss-tunnel");
         EXECUTABLES.add("tun2socks");
-  //      EXECUTABLES.add("kcptun");
+      //  EXECUTABLES.add("kcptun");
 
         copyAssets(context);
     }
@@ -86,5 +91,30 @@ public class SSRSDK {
                 }
             }
         }
+    }
+
+    public static void startVpn(Context context,Profile profile)
+    {
+        Intent intent = new Intent(context, ShadowsocksRunnerActivity.class);
+        intent.putExtra(ShadowsocksRunnerActivity.KEY, profile);
+        context.startActivity(intent);
+    }
+
+    public static void stopVpn(Context context)
+    {
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_SHUTDOWN);
+        intent.setAction(Action.CLOSE);
+        context.sendBroadcast(intent);
+    }
+
+    public static void setVpnCallback(VpnCallback vpnCallback)
+    {
+        SSRSDK.vpnCallback = vpnCallback;
+    }
+
+    public static VpnCallback getVpnCallback()
+    {
+        return vpnCallback;
     }
 }

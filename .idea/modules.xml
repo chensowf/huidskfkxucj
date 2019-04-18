@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_ssr/module_ssr.iml" filepath="$PROJECT_DIR$/module_ssr/module_ssr.iml" />
       <module fileurl="file://$PROJECT_DIR$/shadowsockr-java.iml" filepath="$PROJECT_DIR$/shadowsockr-java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ssr_sdk/ssr_sdk.iml" filepath="$PROJECT_DIR$/ssr_sdk/ssr_sdk.iml" />
     </modules>
   </component>
 </project>

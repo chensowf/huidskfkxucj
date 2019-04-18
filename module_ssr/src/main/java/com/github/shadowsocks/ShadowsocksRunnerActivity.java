@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
 
+import com.github.shadowsocks.aidl.IShadowsocksServiceCallback;
 import com.github.shadowsocks.data.Profile;
 
 public class ShadowsocksRunnerActivity extends ServiceBoundContext {
@@ -21,6 +22,21 @@ public class ShadowsocksRunnerActivity extends ServiceBoundContext {
     BroadcastReceiver receiver;
 
     Profile profile;
+
+    private IShadowsocksServiceCallback.Stub stateCallback = new IShadowsocksServiceCallback.Stub() {
+        @Override
+        public void stateChanged(int state, String profileName, String msg) throws RemoteException {
+            if(SSRSDK.getVpnCallback() != null)
+            {
+                SSRSDK.getVpnCallback().onVpnState(state);
+            }
+        }
+
+        @Override
+        public void trafficUpdated(long txRate, long rxRate, long txTotal, long rxTotal) throws RemoteException {
+
+        }
+    };
 
     @Override
     public void onServiceConnected() {
@@ -55,13 +71,13 @@ public class ShadowsocksRunnerActivity extends ServiceBoundContext {
                 @Override
                 public void onReceive(Context context, Intent intent) {
                     if (intent.getAction() == Intent.ACTION_USER_PRESENT) {
-                        attachService(null);
+                        attachService(stateCallback);
                     }
                 }
             };
             registerReceiver(receiver, filter);
         } else {
-            attachService(null);
+            attachService(stateCallback);
         }
     }
 

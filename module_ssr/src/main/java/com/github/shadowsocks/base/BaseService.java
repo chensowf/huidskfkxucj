@@ -39,7 +39,7 @@ public abstract class BaseService extends VpnService {
     private BroadcastReceiver closeReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
-
+            stopRunner(true,null);
         }
     };
 
@@ -83,7 +83,14 @@ public abstract class BaseService extends VpnService {
 
         @Override
         public void unregisterCallback(IShadowsocksServiceCallback cb) throws RemoteException {
-
+            if(cb != null && callbacks.unregister(cb))
+            {
+                callbacksCount -= 1;
+                if(callbacksCount == 0 && timer != null){
+                    timer.cancel();
+                    timer = null;
+                }
+            }
         }
 
         @Override
