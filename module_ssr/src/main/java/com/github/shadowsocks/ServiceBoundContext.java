@@ -1,8 +1,8 @@
 package com.github.shadowsocks;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
@@ -13,12 +13,14 @@ import com.github.shadowsocks.aidl.IShadowsocksService;
 import com.github.shadowsocks.aidl.IShadowsocksServiceCallback;
 import com.github.shadowsocks.constant.Action;
 
-/**
- * Created by victor on 2017/4/11.
- */
 
-public abstract class ServiceBoundContext extends Activity implements IBinder.DeathRecipient {
-    private String TAG = "Activity";
+public abstract class ServiceBoundContext extends ContextWrapper implements IBinder.DeathRecipient {
+    private String TAG = ServiceBoundContext.class.getSimpleName();
+
+    public ServiceBoundContext(Context base) {
+        super(base);
+    }
+
     class ShadowsocksServiceConnection implements ServiceConnection {
 
         @Override
@@ -47,7 +49,7 @@ public abstract class ServiceBoundContext extends Activity implements IBinder.De
     protected void registerCallback() {
         if (bgService != null && callback != null && !callbackRegistered) {
             try {
-                bgService.registerCallback((IShadowsocksServiceCallback) callback);
+                bgService.registerCallback(callback);
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
@@ -58,7 +60,7 @@ public abstract class ServiceBoundContext extends Activity implements IBinder.De
     protected void unregisterCallback() {
         if (bgService != null && callback != null && callbackRegistered) {
             try {
-                bgService.unregisterCallback((IShadowsocksServiceCallback) callback);
+                bgService.unregisterCallback(callback);
 
             } catch (RemoteException e) {
                 e.printStackTrace();

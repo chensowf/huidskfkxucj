@@ -1,19 +1,22 @@
 package com.github.shadowsocks;
 
+import android.app.Activity;
 import android.app.KeyguardManager;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.VpnService;
-import android.os.Bundle;
 import android.os.Handler;
 import android.os.RemoteException;
 
 import com.github.shadowsocks.aidl.IShadowsocksServiceCallback;
+import com.github.shadowsocks.constant.State;
 import com.github.shadowsocks.data.Profile;
 
-public class ShadowsocksRunnerActivity extends ServiceBoundContext {
+import static android.app.Activity.RESULT_OK;
+
+public class ShadowsocksRunner extends ServiceBoundContext {
 
     public static final String KEY = "ssr_profile";
 
@@ -30,6 +33,9 @@ public class ShadowsocksRunnerActivity extends ServiceBoundContext {
             {
                 SSRSDK.getVpnCallback().onVpnState(state);
             }
+
+            if(state == State.STOPPED)
+                onDestroy();
         }
 
         @Override
@@ -37,6 +43,10 @@ public class ShadowsocksRunnerActivity extends ServiceBoundContext {
 
         }
     };
+
+    public ShadowsocksRunner(Context base) {
+        super(base);
+    }
 
     @Override
     public void onServiceConnected() {
@@ -50,19 +60,17 @@ public class ShadowsocksRunnerActivity extends ServiceBoundContext {
         },1000);
     }
 
-    private void startBackgroundService() {
+    public void startBackgroundService() {
         Intent prepare = VpnService.prepare(this);
         if (prepare != null) {
-            startActivityForResult(prepare,REQUEST_CONNECT);
+            ((Activity)getBaseContext()).startActivityForResult(prepare,REQUEST_CONNECT);
         } else {
             onActivityResult(REQUEST_CONNECT,RESULT_OK,null);
         }
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        profile = getIntent().getParcelableExtra(KEY);
+    public void onCreateVpn(Profile profile) {
+        this.profile = profile;
         KeyguardManager km = (KeyguardManager) getSystemService(Context.KEYGUARD_SERVICE);
         boolean locked = km.inKeyguardRestrictedInputMode();
         if (locked) {
@@ -81,9 +89,10 @@ public class ShadowsocksRunnerActivity extends ServiceBoundContext {
         }
     }
 
-    @Override
+    /**
+     * 注销vpn
+     */
     protected void onDestroy() {
-        super.onDestroy();
         detachService();
         if (receiver != null) {
             unregisterReceiver(receiver);
@@ -91,8 +100,7 @@ public class ShadowsocksRunnerActivity extends ServiceBoundContext {
         }
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
         switch (resultCode) {
             case RESULT_OK:
                 if (bgService != null) {
@@ -103,7 +111,6 @@ public class ShadowsocksRunnerActivity extends ServiceBoundContext {
                     }
                 }
         }
-        finish();
     }
 
     @Override

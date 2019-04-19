@@ -15,7 +15,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="af8dedae-75c8-4021-8cf5-889469415496" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/interfaces/VpnCallback.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileContent/annotation-processors.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileContent/annotation-processors.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -29,78 +28,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.1/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_j256_ormlite_ormlite_android_5_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_j256_ormlite_ormlite_core_5_0_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/module_ssr.iml" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/module_ssr.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/libs/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/libs/dnsjava-2.1.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/libs/libsuperuser-1.0.0.201704021214.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/libs/ormlite-android-5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/libs/ormlite-core-5.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/proguard-rules.pro" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/aidl/com/github/shadowsocks/aidl/IShadowsocksService.aidl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/aidl/com/github/shadowsocks/aidl/IShadowsocksServiceCallback.aidl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/acl/bypass-china.acl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/acl/bypass-lan-china.acl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/acl/bypass-lan.acl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/acl/china-list.acl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/acl/gfwlist.acl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/pdnsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/redsocks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/ss-local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/ss-tunnel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/armeabi-v7a/tun2socks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/pdnsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/redsocks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/ss-local" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/assets/x86/tun2socks" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/GuardProcess.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ServiceBoundContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/Shadowsocks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/System.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/base/BaseService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Action.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/ConfigUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Executable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Key.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Method.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Obfs.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Protocol.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Route.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/State.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/data/DBHelper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/data/Profile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/data/ProfileManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/interfaces/SetProfile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/Callback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/IOUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/SS_SDK.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/Utils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/VpnCallback.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/jniLibs/armeabi-v7a/libsystem.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/jniLibs/x86/libsystem.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/layout/activity_shadowsocks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/values/arrays.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/values/configs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/values/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ssr_sdk/ssr_sdk.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ServiceBoundContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ServiceBoundContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/System.java" beforeDir="false" afterPath="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/System.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -126,15 +61,8 @@
       <file leaf-file-name="BaseService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
+            <state relative-caret-position="4000">
               <caret line="183" column="37" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="37" />
-              <folding>
-                <element signature="e#1298#1456#0" expanded="true" />
-                <element signature="e#1455#1456#0" expanded="true" />
-                <element signature="e#5014#5847#0" expanded="true" />
-                <element signature="e#5846#5847#0" expanded="true" />
-                <element signature="e#6201#6231#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -142,8 +70,23 @@
       <file leaf-file-name="ShadowsocksVpnThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
+            <state relative-caret-position="1375">
               <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShadowsocksVpnService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3625">
+              <caret line="150" column="72" selection-start-line="150" selection-start-column="72" selection-end-line="150" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -151,19 +94,23 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module_ssr/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
+            <state relative-caret-position="800">
               <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ShadowsocksRunnerActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java">
+      <file leaf-file-name="ShadowsocksRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2000">
-              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+            <state relative-caret-position="441">
+              <caret line="81" column="53" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1478#1479#0" expanded="true" />
+                <element signature="e#1505#1506#0" expanded="true" />
+                <element signature="e#1297#1496#0" expanded="true" />
+                <element signature="e#1495#1496#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -172,8 +119,13 @@
       <file leaf-file-name="ServiceBoundContext.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ServiceBoundContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="94" column="29" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="29" />
+            <state relative-caret-position="375">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#728#729#0" expanded="true" />
+                <element signature="e#755#756#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,14 +133,25 @@
       <file leaf-file-name="SSRSDK.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2461">
-              <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
+            <state relative-caret-position="1016">
+              <caret line="118" column="31" selection-start-line="118" selection-start-column="31" selection-end-line="118" selection-end-column="31" />
               <folding>
-                <element signature="e#3519#3520#0" expanded="true" />
-                <element signature="e#3565#3566#0" expanded="true" />
-                <element signature="e#3625#3626#0" expanded="true" />
-                <element signature="e#3659#3660#0" expanded="true" />
+                <element signature="e#4329#4330#0" expanded="true" />
+                <element signature="e#4377#4378#0" expanded="true" />
+                <element signature="e#4431#4432#0" expanded="true" />
+                <element signature="e#4465#4466#0" expanded="true" />
+                <element signature="e#4525#4526#0" expanded="true" />
+                <element signature="e#4561#4562#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="System.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/System.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
@@ -196,39 +159,24 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VpnCallback.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/interfaces/VpnCallback.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="300">
+              <caret line="50" column="21" selection-start-line="50" selection-start-column="18" selection-end-line="77" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+            </state>
+          </provider>
           <provider editor-type-id="android-manifest">
             <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-            </state>
           </provider>
         </entry>
       </file>
@@ -2543,715 +2491,6 @@
             </list>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/ssr_sdk">
-          <value>
-            <list>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeDebugProguardFiles" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the sub-projects of project ':ssr_sdk'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="projects" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="packageReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="validateSigningDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformNativeLibsWithSyncJniLibsForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="assembleReleaseUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareDebugDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a bundle containing the library in debug." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="bundleDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="copyDebugLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="processReleaseJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="lintDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles a bundle containing the library in release." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="bundleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="assembleDebugUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Creates a version of android.jar that's suitable for unit tests." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mockableAndroidJar" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the configuration model of project ':ssr_sdk'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="model" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:appcompat-v7:25.3.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareComAndroidSupportAppcompatV72530Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the tasks runnable from project ':ssr_sdk'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="tasks" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="packageReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeReleaseProguardFiles" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="incrementalDebugJavaCompilationSafeguard" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks using Device Providers and Test Servers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="deviceCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all dependencies declared in project ':ssr_sdk'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="dependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="processDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformNativeLibsWithStripDebugSymbolForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="lint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileReleaseNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-core-ui:25.3.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareComAndroidSupportSupportCoreUi2530Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects it depends on." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="buildNeeded" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateDebugAndroidTestBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="processDebugUnitTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run unit tests for the release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="testReleaseUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build cache directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="cleanBuildCache" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="assembleDefault" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugAndroidTestShaders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeDebugShaders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugAndroidTestJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the components produced by project ':ssr_sdk'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="components" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileReleaseRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Debug builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="assembleDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="processDebugAndroidTestManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugUnitTestJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-core-utils:25.3.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareComAndroidSupportSupportCoreUtils2530Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformResourcesWithMergeJavaResForReleaseUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="preDebugAndroidTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Extracts Android annotations for the debug variant into the archive file" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="extractDebugAnnotations" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="processDebugAndroidTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="processReleaseUnitTestJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="javaPreCompileDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformClassesAndResourcesWithSyncLibJarsForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileReleaseShaders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateDebugAndroidTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareDebugAndroidTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="incrementalDebugAndroidTestJavaCompilationSafeguard" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformClassesAndResourcesWithSyncLibJarsForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="checkReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="javaPreCompileDebugUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="packageDebugResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformNativeLibsWithSyncJniLibsForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugAndroidTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeReleaseJniLibFolders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareReleaseDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="processReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs instrumentation tests using all Device Providers." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="deviceAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeDebugAndroidTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-media-compat:25.3.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareComAndroidSupportSupportMediaCompat2530Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="processReleaseManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-vector-drawable:25.3.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareComAndroidSupportSupportVectorDrawable2530Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstalls the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="uninstallDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the insight into a specific dependency in project ':ssr_sdk'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="dependencyInsight" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="incrementalReleaseUnitTestJavaCompilationSafeguard" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="preReleaseBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all variants of all applications and secondary packages." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="assemble" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="incrementalDebugUnitTestJavaCompilationSafeguard" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-compat:25.3.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareComAndroidSupportSupportCompat2530Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="incrementalReleaseJavaCompilationSafeguard" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays a help message." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="help" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileReleaseUnitTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs the android (on device) tests for the Debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="installDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="javaPreCompileReleaseUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="javaPreCompileRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all device checks on currently connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="connectedCheck" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs the tests for debug on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="connectedDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Uninstall all applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="uninstallAll" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformNativeLibsWithMergeJniLibsForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all the Test applications." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="assembleAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="processDebugAndroidTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Extracts Android annotations for the release variant into the archive file" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="extractReleaseAnnotations" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="preDebugUnitTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateDebugAndroidTestResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformNativeLibsWithMergeJniLibsForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeReleaseShaders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the Android dependencies of the project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="androidDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugAndroidTestNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugUnitTestSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformNativeLibsWithMergeJniLibsForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateDebugSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeDebugAndroidTestJniLibFolders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="extractProguardFiles" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformClassesWithDexForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="assembleDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="copyReleaseLint" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="processDebugJavaRes" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateDebugAndroidTestAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileReleaseJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformResourcesWithMergeJavaResForDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareReleaseUnitTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run unit tests for all variants." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="test" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformNativeLibsWithStripDebugSymbolForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugNdk" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeDebugAndroidTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="preReleaseUnitTestBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateDebugResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs all checks." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="check" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="javaPreCompileDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Run unit tests for the debug build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="testDebugUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Installs and runs instrumentation tests for all flavors on connected devices." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="connectedAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="preBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformResourcesWithMergeJavaResForRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileReleaseSources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileReleaseUnitTestJavaWithJavac" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugShaders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformResourcesWithMergeJavaResForDebug" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileReleaseAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Runs lint on the Release build." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="lintRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project and all projects that depend on it." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="buildDependents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateDebugAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-v4:25.3.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareComAndroidSupportSupportV42530Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the dependent components of components in project ':ssr_sdk'. [incubating]" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="dependentComponents" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays all buildscript dependencies declared in project ':ssr_sdk'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="buildEnvironment" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="checkDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeDebugJniLibFolders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prints out all the source sets defined in this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="sourceSets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="transformResourcesWithMergeJavaResForDebugUnitTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeReleaseAssets" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="packageDebugRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateReleaseBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareDebugUnitTestDependencies" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateReleaseResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the signing info for each variant." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="signingReport" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugAndroidTestAidl" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="mergeDebugAndroidTestShaders" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Deletes the build directory." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="clean" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="preDebugBuild" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:support-fragment:25.3.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareComAndroidSupportSupportFragment2530Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateDebugBuildConfig" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles and tests this project." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="build" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Assembles all Release builds." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="assembleRelease" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="compileDebugAndroidTestRenderscript" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateDebugAndroidTestResources" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="processDebugManifest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="packageDebugAndroidTest" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Prepare com.android.support:animated-vector-drawable:25.3.0" />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="prepareComAndroidSupportAnimatedVectorDrawable2530Library" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="generateReleaseResValues" />
-              </ExternalTaskPojo>
-              <ExternalTaskPojo>
-                <option name="description" value="Displays the properties of project ':ssr_sdk'." />
-                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/ssr_sdk" />
-                <option name="name" value="properties" />
-              </ExternalTaskPojo>
-            </list>
-          </value>
-        </entry>
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -3970,23 +3209,25 @@
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/SetProfile.java" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/Shadowsocks.java" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/SS_SDK.java" />
-        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ServiceBoundContext.java" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/utils/Obfs.java" />
         <option value="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Method.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MyApplication.java" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/GuardProcess.java" />
         <option value="$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/SS_SDK.java" />
-        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java" />
-        <option value="$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/interfaces/VpnCallback.java" />
-        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java" />
-        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/module_ssr/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java" />
         <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunner.java" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ServiceBoundContext.java" />
+        <option value="$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/System.java" />
       </list>
     </option>
   </component>
@@ -4002,7 +3243,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -4090,11 +3331,19 @@
               <item name="shadowsocks" type="462c0819:PsiDirectoryNode" />
               <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="shadowsockr-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="shadowsockr-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="module_ssr" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -4268,11 +3517,19 @@
       <option name="project" value="LOCAL" />
       <updated>1555586584118</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit:添加vpn回调，还需要调整一下">
+      <created>1555589250727</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555589250727</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="Android Profiler" order="12" sideWeight="0.3640725" weight="0.6034858" />
       <window_info anchor="right" id="sbt" order="10" />
@@ -4281,11 +3538,11 @@
       <window_info anchor="bottom" x="22" y="489" width="1876" height="271" id="Logcat" order="10" sideWeight="0.8342217" side_tool="true" weight="0.41285402" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.14872068" weight="0.38562092" />
-      <window_info anchor="bottom" id="SBT Execute" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="7" sideWeight="0.14818764" visible="true" weight="0.053376906" />
+      <window_info anchor="bottom" id="SBT Execute" order="14" side_tool="true" />
       <window_info id="Structure" order="1" sideWeight="0.5097276" side_tool="true" weight="0.18923241" />
       <window_info anchor="right" id="Device File Explorer" order="9" sideWeight="0.50167227" side_tool="true" visible="true" weight="0.17910448" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.1641791" visible="true" weight="0.2254902" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.1641791" weight="0.32352942" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3278867" />
       <window_info anchor="bottom" id="SBT Console" order="14" weight="0.32897604" />
       <window_info anchor="right" id="Palette&#9;" order="4" />
@@ -4293,11 +3550,10 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5101279" weight="0.5163399" />
       <window_info anchor="bottom" content_ui="combo" id="Version Control" order="9" sideWeight="0.52132195" weight="0.44553378" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.8358209" side_tool="true" visible="true" weight="0.2254902" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.85181236" side_tool="true" visible="true" weight="0.053376906" />
       <window_info id="Captures" order="2" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49027237" visible="true" weight="0.24147122" />
       <window_info anchor="bottom" id="sbt-shell-toolwindow" order="14" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.2788671" />
       <window_info anchor="right" id="Gradle" order="6" sideWeight="0.49832776" weight="0.32889125" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" sideWeight="0.509434" side_tool="true" weight="0.18923241" />
@@ -4309,6 +3565,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" weight="0.2788671" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
@@ -4318,7 +3575,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit:152d3f15d" />
     <MESSAGE value="commit:调通ssr的库" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit:调通ssr的库" />
+    <MESSAGE value="commit:添加vpn回调，还需要调整一下" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit:添加vpn回调，还需要调整一下" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -4340,55 +3598,10 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Method.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Obfs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Protocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Route.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/Shadowsocks.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="222" column="17" selection-start-line="222" selection-start-column="17" selection-end-line="222" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2052">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Protocol.java" />
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/Route.java" />
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/Shadowsocks.java" />
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/Utils.java" />
     <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/GuardProcess.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="503">
@@ -4396,20 +3609,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/SS_SDK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/build.gradle" />
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/utils/SS_SDK.java" />
     <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/com.liang.victor.myssrlib/pdnsd-vpn.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -4417,13 +3618,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/ConfigUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/constant/ConfigUtils.java" />
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -4431,45 +3626,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksrs/ss-tunnel-vpn.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksrs/ss-local-vpn.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksr/ss-tunnel-vpn.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksr/ss-local-vpn.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksr/shared_prefs/in.zhaoj.shadowsocksr_preferences.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksrs/pdnsd-vpn.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="59" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksr/pdnsd-vpn.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksrs/ss-tunnel-vpn.conf" />
+    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksrs/ss-local-vpn.conf" />
+    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksr/ss-tunnel-vpn.conf" />
+    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksr/ss-local-vpn.conf" />
+    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksr/shared_prefs/in.zhaoj.shadowsocksr_preferences.xml" />
+    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksrs/pdnsd-vpn.conf" />
+    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/samsung-sm_n950n-ce09171933544cba0c7e/data/data/in.zhaoj.shadowsocksr/pdnsd-vpn.conf" />
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-25/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-273">
@@ -4477,31 +3640,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="59" column="86" selection-start-line="59" selection-start-column="86" selection-end-line="59" selection-end-column="86" />
-          <folding>
-            <element signature="e#2064#3398#0" expanded="true" />
-            <element signature="e#3397#3398#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="241" column="59" selection-start-line="241" selection-start-column="59" selection-end-line="241" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/GuardProcess.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1300">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java" />
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java" />
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/java/com/github/shadowsocks/GuardProcess.java" />
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-25/android/net/LocalSocketAddress.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -4509,13 +3650,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/Contance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/Contance.java" />
     <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/constant/Action.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -4604,40 +3739,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="123" column="29" selection-start-line="123" selection-start-column="19" selection-end-line="123" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="37" column="60" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ssr_sdk/src/main/AndroidManifest.xml" />
     <entry file="file://$PROJECT_DIR$/module_ssr/build/generated/source/aidl/debug/com/github/shadowsocks/aidl/IShadowsocksServiceCallback.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -4657,66 +3763,121 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/module_ssr/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
+        <state relative-caret-position="800">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="66" column="35" selection-start-line="66" selection-start-column="35" selection-end-line="66" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2461">
-          <caret line="117" column="27" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
-          <folding>
-            <element signature="e#3519#3520#0" expanded="true" />
-            <element signature="e#3565#3566#0" expanded="true" />
-            <element signature="e#3625#3626#0" expanded="true" />
-            <element signature="e#3659#3660#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/base/BaseService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
+        <state relative-caret-position="4000">
           <caret line="183" column="37" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-25/android/content/Context.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="85" column="50" selection-start-line="85" selection-start-column="50" selection-end-line="85" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-25/android/content/ContextWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="74" column="19" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
           <folding>
-            <element signature="e#1298#1456#0" expanded="true" />
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#5014#5847#0" expanded="true" />
-            <element signature="e#5846#5847#0" expanded="true" />
-            <element signature="e#6201#6231#0" expanded="true" />
+            <element signature="e#2455#2456#0" expanded="true" />
+            <element signature="e#2483#2484#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/liang/victor/myssrlib/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="50" column="21" selection-start-line="50" selection-start-column="18" selection-end-line="77" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="81" column="53" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1478#1479#0" expanded="true" />
+            <element signature="e#1505#1506#0" expanded="true" />
+            <element signature="e#1297#1496#0" expanded="true" />
+            <element signature="e#1495#1496#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3625">
+          <caret line="150" column="72" selection-start-line="150" selection-start-column="72" selection-end-line="150" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ServiceBoundContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="94" column="29" selection-start-line="94" selection-start-column="16" selection-end-line="94" selection-end-column="29" />
+        <state relative-caret-position="375">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#728#729#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksRunnerActivity.java">
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/ShadowsocksVpnThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2000">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+        <state relative-caret-position="1375">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/SSRSDK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1016">
+          <caret line="118" column="31" selection-start-line="118" selection-start-column="31" selection-end-line="118" selection-end-column="31" />
+          <folding>
+            <element signature="e#4329#4330#0" expanded="true" />
+            <element signature="e#4377#4378#0" expanded="true" />
+            <element signature="e#4431#4432#0" expanded="true" />
+            <element signature="e#4465#4466#0" expanded="true" />
+            <element signature="e#4525#4526#0" expanded="true" />
+            <element signature="e#4561#4562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_ssr/src/main/java/com/github/shadowsocks/System.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>

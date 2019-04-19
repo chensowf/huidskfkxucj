@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.Button;
 
 import com.github.shadowsocks.SSRSDK;
-import com.github.shadowsocks.ShadowsocksRunnerActivity;
 import com.github.shadowsocks.constant.Route;
 import com.github.shadowsocks.data.Profile;
 import com.github.shadowsocks.constant.Method;
@@ -49,7 +48,7 @@ public class MainActivity extends Activity implements View.OnClickListener,VpnCa
         profile.setUdpdns(true);
         profile.setRoute(Route.GFWLIST);
 
-        SSRSDK.startVpn(this,profile);
+        SSRSDK.startVpn(this,MainActivity.class,profile);
     }
 
     @Override
@@ -72,4 +71,9 @@ public class MainActivity extends Activity implements View.OnClickListener,VpnCa
         }
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        SSRSDK.onActivityResult(requestCode, resultCode, data);
+    }
 }

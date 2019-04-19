@@ -148,7 +148,7 @@ public class ShadowsocksVpnService extends BaseService {
 
         if(VpnService.prepare(this) != null)
         {
-            Intent intent = new Intent(this, ShadowsocksRunnerActivity.class);
+            Intent intent = new Intent(this, SSRSDK.getActivityClass());
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             stopRunner(true,null);
             startActivity(intent);

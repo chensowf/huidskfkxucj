@@ -1,5 +1,6 @@
 package com.github.shadowsocks;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -24,7 +25,13 @@ public class SSRSDK {
 
     private static ArrayList<String> EXECUTABLES = new ArrayList<>();
     private static VpnCallback vpnCallback;
+    private static ShadowsocksRunner shadowsocksRunner;
+    private static Class<Activity> activityClass;
 
+    /**
+     * 初始化ssrluinx程序运行环境
+     * @param context
+     */
     public static void init(Context context)
     {
         EXECUTABLES.add("redsocks");
@@ -37,6 +44,10 @@ public class SSRSDK {
         copyAssets(context);
     }
 
+    /**
+     * 删除旧执行文件和配置文件
+     * @param context
+     */
     private static void crashRecovery(Context context)
     {
         ArrayList<String> cmd = new ArrayList<>();
@@ -49,7 +60,10 @@ public class SSRSDK {
         Shell.SH.run(cmd);
     }
 
-
+    /**
+     * 复制可执行文件和配置文件到目录下
+     * @param context
+     */
     private static void copyAssets(Context context)
     {
         crashRecovery(context);
@@ -65,7 +79,6 @@ public class SSRSDK {
         cmd.clear();
         EXECUTABLES.clear();
     }
-
 
     private static void copyAssets(String path, Context context)
     {
@@ -93,13 +106,34 @@ public class SSRSDK {
         }
     }
 
-    public static void startVpn(Context context,Profile profile)
+    /**
+     * 开启vpn
+     * @param context
+     * @param activityClass
+     * @param profile
+     */
+    public static void startVpn(Context context,Class activityClass, Profile profile)
     {
-        Intent intent = new Intent(context, ShadowsocksRunnerActivity.class);
-        intent.putExtra(ShadowsocksRunnerActivity.KEY, profile);
-        context.startActivity(intent);
+        shadowsocksRunner = new ShadowsocksRunner(context);
+        SSRSDK.activityClass = activityClass;
+        shadowsocksRunner.onCreateVpn(profile);
     }
 
+    /**
+     * vpn权限回调
+     * @param requestCode
+     * @param resultCode
+     * @param data
+     */
+    public static void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        shadowsocksRunner.onActivityResult(requestCode,resultCode,data);
+    }
+
+    /**
+     * 停止vpn
+     * @param context
+     */
     public static void stopVpn(Context context)
     {
         Intent intent = new Intent();
@@ -108,6 +142,10 @@ public class SSRSDK {
         context.sendBroadcast(intent);
     }
 
+    /**
+     * 设置vpn回调
+     * @param vpnCallback
+     */
     public static void setVpnCallback(VpnCallback vpnCallback)
     {
         SSRSDK.vpnCallback = vpnCallback;
@@ -116,5 +154,10 @@ public class SSRSDK {
     public static VpnCallback getVpnCallback()
     {
         return vpnCallback;
+    }
+
+    public static Class<Activity> getActivityClass()
+    {
+        return activityClass;
     }
 }
