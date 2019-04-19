@@ -39,7 +39,7 @@ public class MainActivity extends Activity implements View.OnClickListener,VpnCa
         }
 
         Profile profile = new Profile();
-        profile.setHost("38.16.22.29");
+        profile.setHost("38.106.22.239");
         profile.setRemotePort(23334);
         profile.setPassword("caonima");
         profile.setMethod(Method.CHACHA20);
