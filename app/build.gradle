@@ -37,4 +37,6 @@ dependencies {
     //  compile(name: 'ssr-sdk', ext: 'aar')
     implementation project(':module_ssr')
     implementation 'com.squareup.okhttp3:okhttp:3.14.1'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
 }
