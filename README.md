@@ -1,4 +1,3 @@
 # shadowsockr-java
-java重写的shadowsocksr
-
+java重写的ssrsdk
 
