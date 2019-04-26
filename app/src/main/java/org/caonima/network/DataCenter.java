@@ -44,6 +44,10 @@ public class DataCenter {
                         String config = Gzip.decompress(buffer);
                         Log.e("config",config);
                         List<Node> nodeList = Node.getNodeList(config);
+                        MessageEvent messageEvent = new DataCenterMessageEvent();
+                        messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_LIST_RECV;
+                        messageEvent.data = nodeList;
+                        EventBus.getDefault().post(messageEvent);
                     }
                 });
     }

@@ -1,6 +1,8 @@
 package org.caonima.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.NavigationView;
@@ -19,6 +21,7 @@ import com.github.shadowsocks.data.Profile;
 import com.github.shadowsocks.interfaces.VpnCallback;
 
 import org.caonima.R;
+import org.caonima.bean.Node;
 import org.caonima.event.DataCenterMessageEvent;
 import org.caonima.event.MessageEvent;
 import org.greenrobot.eventbus.EventBus;
@@ -27,7 +30,10 @@ import org.greenrobot.eventbus.ThreadMode;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,VpnCallback {
+    public static final int NODE_CONFIG_REQUEST = 0X234;
+    public static final String NODE_CONFIG_EXTRA = "node_config";
 
+    Node mNode;
     Button mVpnConnectButton;
 
     @Override
@@ -62,14 +68,11 @@ public class MainActivity extends AppCompatActivity
         mVpnConnectButton = findViewById(R.id.main_vpn_connect_button);
 
         mVpnConnectButton.setOnClickListener(v -> {
-            /*MessageEvent messageEvent = new DataCenterMessageEvent();
-            messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG_COMMAND;
-            messageEvent.data = "b3c4c3d62012c11ce7776cf59974fea1";
-
-            EventBus.getDefault().post(messageEvent);*/
             MessageEvent messageEvent = new DataCenterMessageEvent();
-            messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_LIST_COMMAND;
-            EventBus.getDefault().postSticky(messageEvent);
+            messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG_COMMAND;
+            messageEvent.data = mNode.idHash;
+
+            EventBus.getDefault().post(messageEvent);
         });
     }
 
@@ -99,7 +102,7 @@ public class MainActivity extends AppCompatActivity
         item.setIcon(R.drawable.server_icon_am);
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            NodeActivity.startNodeActivity(this);
+            NodeActivity.startNodeActivity(this,NODE_CONFIG_REQUEST);
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -161,5 +164,15 @@ public class MainActivity extends AppCompatActivity
     protected void onDestroy() {
         super.onDestroy();
         EventBus.getDefault().unregister(this);
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(resultCode == RESULT_OK
+                && requestCode == NODE_CONFIG_REQUEST)
+        {
+            mNode = data.getParcelableExtra(NODE_CONFIG_EXTRA);
+        }
     }
 }
