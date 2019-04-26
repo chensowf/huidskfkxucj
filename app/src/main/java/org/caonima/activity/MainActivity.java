@@ -35,7 +35,9 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_menu);
         setSupportActionBar(toolbar);
+
         SSRSDK.setVpnCallback(this);
         EventBus.getDefault().register(this);
 
@@ -47,7 +49,12 @@ public class MainActivity extends AppCompatActivity
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
+        toggle.setDrawerIndicatorEnabled(false);
         toggle.syncState();
+        toolbar.setNavigationOnClickListener(v -> {
+            drawer.openDrawer(GravityCompat.START);
+        });
+
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -62,7 +69,7 @@ public class MainActivity extends AppCompatActivity
             EventBus.getDefault().post(messageEvent);*/
             MessageEvent messageEvent = new DataCenterMessageEvent();
             messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_LIST_COMMAND;
-            EventBus.getDefault().post(messageEvent);
+            EventBus.getDefault().postSticky(messageEvent);
         });
     }
 
@@ -89,12 +96,12 @@ public class MainActivity extends AppCompatActivity
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
+        item.setIcon(R.drawable.server_icon_am);
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            NodeActivity.startNodeActivity(this);
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
