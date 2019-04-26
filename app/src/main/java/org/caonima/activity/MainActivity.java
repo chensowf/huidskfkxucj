@@ -1,7 +1,6 @@
 package org.caonima.activity;
 
 import android.os.Bundle;
-import android.os.Message;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.NavigationView;
@@ -10,26 +9,21 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
 import com.github.shadowsocks.SSRSDK;
-import com.github.shadowsocks.constant.Method;
-import com.github.shadowsocks.constant.Obfs;
-import com.github.shadowsocks.constant.Protocol;
 import com.github.shadowsocks.constant.State;
 import com.github.shadowsocks.data.Profile;
 import com.github.shadowsocks.interfaces.VpnCallback;
-import com.google.gson.Gson;
 
 import org.caonima.R;
 import org.caonima.event.DataCenterMessageEvent;
 import org.caonima.event.MessageEvent;
-import org.caonima.utils.IpUtil;
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener,VpnCallback {
@@ -59,11 +53,16 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         mVpnConnectButton = findViewById(R.id.main_vpn_connect_button);
-        mVpnConnectButton.setOnClickListener(v -> {
-            MessageEvent messageEvent = new DataCenterMessageEvent();
-            messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG;
 
-         //   EventBus.getDefault().post();
+        mVpnConnectButton.setOnClickListener(v -> {
+            /*MessageEvent messageEvent = new DataCenterMessageEvent();
+            messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG_COMMAND;
+            messageEvent.data = "b3c4c3d62012c11ce7776cf59974fea1";
+
+            EventBus.getDefault().post(messageEvent);*/
+            MessageEvent messageEvent = new DataCenterMessageEvent();
+            messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_LIST_COMMAND;
+            EventBus.getDefault().post(messageEvent);
         });
     }
 
@@ -141,10 +140,10 @@ public class MainActivity extends AppCompatActivity
      * 接收数据中心服务发射过来的数据
      * @param event
      */
-    @Subscribe()
+    @Subscribe(threadMode = ThreadMode.MAIN)
     public void recvDataCenter(MessageEvent event)
     {
-        if(event.event == DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG)
+        if(event.event == DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG_RECV)
         {
             Profile profile = (Profile) event.data;
             SSRSDK.startVpn(this,MainActivity.class,profile);

@@ -37,11 +37,11 @@ public class DataCenterService extends Service {
         switch (event.event)
         {
             case DataCenterMessageEvent
-                    .EVENT_GET_VPN_NODE_LIST:
+                    .EVENT_GET_VPN_NODE_LIST_COMMAND:
                 DataCenter.getVpnList();
                 break;
             case DataCenterMessageEvent
-                    .EVENT_GET_VPN_NODE_CONFIG:
+                    .EVENT_GET_VPN_NODE_CONFIG_COMMAND:
                 DataCenter.getNodeConfig((String) event.data);
                 break;
         }

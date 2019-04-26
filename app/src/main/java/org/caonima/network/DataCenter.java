@@ -3,13 +3,19 @@ package org.caonima.network;
 import android.util.Log;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import org.caonima.bean.Node;
+import org.caonima.bean.QueryResult;
+import org.caonima.bean.SSRConfig;
 import org.caonima.event.DataCenterMessageEvent;
 import org.caonima.event.MessageEvent;
+import org.caonima.utils.Gzip;
 import org.greenrobot.eventbus.EventBus;
 
 import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -33,9 +39,11 @@ public class DataCenter {
                     }
 
                     @Override
-                    public void onResponse(Call call, Response response) {
-
-
+                    public void onResponse(Call call, Response response) throws IOException {
+                        byte[] buffer = response.body().bytes();
+                        String config = Gzip.decompress(buffer);
+                        Log.e("config",config);
+                        List<Node> nodeList = Node.getNodeList(config);
                     }
                 });
     }
@@ -61,11 +69,12 @@ public class DataCenter {
                     @Override
                     public void onResponse(Call call, Response response) throws IOException {
                         String config = response.body().string();
+                        Log.e("error",config);
                         Gson gson = new Gson();
-                        SSRConfig ssrConfig = gson.fromJson(config,SSRConfig.class);
+                        QueryResult<List<SSRConfig>> result = gson.fromJson(config,new TypeToken<QueryResult<List<SSRConfig>>>(){}.getType());
                         MessageEvent messageEvent = new DataCenterMessageEvent();
-                        messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG;
-                        messageEvent.data = ssrConfig.getProfile();
+                        messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG_RECV;
+                        messageEvent.data = result.cfgs.get(0).getProfile();
                         /**
                          * 获取配置然后发射到需要这个配置的地方，事件监听为DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG
                          */

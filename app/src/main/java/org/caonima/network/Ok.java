@@ -1,5 +1,7 @@
 package org.caonima.network;
 
+import android.util.Log;
+
 import java.security.GeneralSecurityException;
 import java.security.cert.CertificateException;
 import java.util.HashMap;
@@ -35,12 +37,12 @@ public class Ok{
             sslContext = SSLContext.getInstance("SSL");
             sslContext.init(null,new X509TrustManager[]{new X509TrustManager() {
                 @Override
-                public void checkClientTrusted(java.security.cert.X509Certificate[] chain, String authType) throws CertificateException {
+                public void checkClientTrusted(java.security.cert.X509Certificate[] chain, String authType) {
 
                 }
 
                 @Override
-                public void checkServerTrusted(java.security.cert.X509Certificate[] chain, String authType) throws CertificateException {
+                public void checkServerTrusted(java.security.cert.X509Certificate[] chain, String authType) {
 
                 }
 
@@ -67,8 +69,7 @@ public class Ok{
         Request.Builder builder = new Request.Builder();
         addHead(heads,builder);
         addMethod(method,pareams,builder);
-        builder.url(url+api)
-                .get();
+        builder.url(url+api);
         okHttpClient.newCall(builder.build()).enqueue(callback);
     }
 
@@ -108,6 +109,7 @@ public class Ok{
         {
             String name = (String) iterable.next();
             String value = pareams.get(name);
+            Log.e("error",name+" "+value);
             builder.add(name,value);
         }
         return builder.build();

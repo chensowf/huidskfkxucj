@@ -1,4 +1,4 @@
-package org.caonima.network;
+package org.caonima.bean;
 
 import com.github.shadowsocks.data.Profile;
 
