@@ -25,4 +25,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.182"
          />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/main_vpn_connect_loading"
+        android:layout_width="@dimen/dp_210"
+        android:layout_height="@dimen/dp_210"
+        app:indicatorColor="@color/colorPrimaryDark"
+        app:indicatorName="BallClipRotatePulseIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
 </android.support.constraint.ConstraintLayout>

@@ -13,12 +13,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 import com.github.shadowsocks.SSRSDK;
 import com.github.shadowsocks.constant.State;
 import com.github.shadowsocks.data.Profile;
 import com.github.shadowsocks.interfaces.VpnCallback;
+import com.wang.avi.AVLoadingIndicatorView;
 
 import org.caonima.R;
 import org.caonima.bean.Node;
@@ -35,6 +37,8 @@ public class MainActivity extends AppCompatActivity
 
     Node mNode;
     Button mVpnConnectButton;
+    AVLoadingIndicatorView mAVLoadingIndicatorView;
+    boolean mIsVpnConnect;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,13 +70,27 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         mVpnConnectButton = findViewById(R.id.main_vpn_connect_button);
+        mAVLoadingIndicatorView = findViewById(R.id.main_vpn_connect_loading);
+        mAVLoadingIndicatorView.setVisibility(View.GONE);
 
         mVpnConnectButton.setOnClickListener(v -> {
-            MessageEvent messageEvent = new DataCenterMessageEvent();
-            messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG_COMMAND;
-            messageEvent.data = mNode.idHash;
+            if(mNode != null) {
+                if (!mIsVpnConnect) {
+                    MessageEvent messageEvent = new DataCenterMessageEvent();
+                    messageEvent.event = DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG_COMMAND;
+                    messageEvent.data = mNode.idHash;
 
-            EventBus.getDefault().post(messageEvent);
+                    EventBus.getDefault().post(messageEvent);
+
+                    mAVLoadingIndicatorView.setVisibility(View.VISIBLE);
+                } else {
+                    SSRSDK.stopVpn(this);
+                }
+            }
+            else
+            {
+                Snackbar.make(mVpnConnectButton,"没有选择连接节点",Snackbar.LENGTH_SHORT).show();
+            }
         });
     }
 
@@ -139,9 +157,12 @@ public class MainActivity extends AppCompatActivity
         {
             case State.CONNECTED:
                 mVpnConnectButton.setText("Connected");
+                mAVLoadingIndicatorView.setVisibility(View.GONE);
+                mIsVpnConnect = true;
                 break;
             case State.STOPPED:
                 mVpnConnectButton.setText("Stopped");
+                mIsVpnConnect = false;
                 break;
         }
     }
@@ -156,6 +177,8 @@ public class MainActivity extends AppCompatActivity
         if(event.event == DataCenterMessageEvent.EVENT_GET_VPN_NODE_CONFIG_RECV)
         {
             Profile profile = (Profile) event.data;
+            profile.setName(mNode.name);
+            profile.setUdpdns(true);
             SSRSDK.startVpn(this,MainActivity.class,profile);
         }
     }
